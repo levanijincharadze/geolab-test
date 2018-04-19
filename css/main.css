@@ -1,0 +1,607 @@
+/*--- reset some styles ---*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: none;
+	border-radius: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+hr{
+	background-color: #69258f;
+	border: none;
+	width: 70%;
+	height: 4px;
+	margin: 15px auto;
+}
+/*--- desktop version ---*/
+body{
+	background-color: #f1f3f5;
+	font-family: 'Roboto', sans-serif;
+}
+#main-container{
+	background-color: #f8f9fa;
+	box-shadow:  0 0 10px rgba(0, 0, 0, .06);
+	margin: 0 auto;
+	padding: 0;
+	max-width: 1366px;
+}
+/*--- navigation ---*/
+.custom-nav{
+	margin: 0 113px;
+	padding: 0;
+	font-size: 12pt;
+}
+#menu, .navbar-brand, .logo, .nav-item, .nav-link .active{
+	margin: 0;
+	padding: 0;
+}
+.logo{
+	margin-top: 5px;
+	width: 85px;
+}
+.navbar-collapse{
+	text-align: center;
+}
+.nav-item{
+	margin-left: 30px;
+}
+.nav-link:hover:not(.active),.active{
+	border-bottom: solid 3px #652d89;
+}
+.navbar-light, .navbar-toggler{
+	background-color: transparent;
+	border: none;
+}
+button:focus{
+	outline: none;
+}
+.navbar-toggler-open-icon{
+	background-image: url('../images/menu.svg') !important;
+}
+.navbar-toggler-close-icon{
+	background-image: url('../images/exit.svg') !important;
+}
+/*--- main text, chevron-down icon and big background ---*/
+.container1{
+	position: relative;
+	background-image: url(../images/backBig.jpg);
+	background-position: center;
+	border-bottom: solid 3px #69258f;
+	height: 703px;
+	margin-top: 5px;
+}
+.heading1{
+	text-align: center;
+	padding-top: 25px; 
+	font-size: 40pt;
+}
+.chevron-down{
+	position: absolute;
+	color: #dabced;
+	bottom: 20px;
+	left: 0;
+	right: 0;
+	margin: auto;
+	width: 80px;
+	font-size: 80px;
+}
+.chevron-down a{
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	color: #dabced;
+}
+.bounce{
+	-moz-animation: bounce 2s 2;
+	-webkit-animation: bounce 2s 2;
+	animation: bounce 2s 2;
+}
+@keyframes bounce{
+	0%, 20%, 50%, 80%, 100%{
+		transform: translateY(0);
+	}
+	40%{
+		transform: translateY(-30px);
+	}
+	60%{
+		transform: translateY(-15px);
+	}
+}
+/*--- main content ---*/
+#main{
+	margin: 0 113px;
+	padding: 0;
+}
+/*--- #about section ---*/
+.heading3, .about-text{
+	font-size: 32pt;
+	font-weight: 300;
+	margin-top: 50px;
+	text-align: center;
+}
+.about-text{
+	font-style: normal;
+	font-size: 22pt;
+}
+.about-row, .about-card, .about-card-img{
+	border: none;
+	border-radius: 0;
+	margin: 0;
+	padding: 0;
+}
+.about-card{
+	background-color: #f8f9fa;
+	margin: 60px auto;
+}
+.about-card-img{
+	width: 362px;
+	height: 213px;
+}
+.card-icon-overlay{
+	position: absolute;
+	border: solid 4px #f8f9fa;
+	border-radius: 50%;
+	background-color: #69258f;
+	margin: auto;
+	width: 54px;
+	height: 54px;
+	top: -23px;
+	left: 0;
+	right: 0;
+}
+.icon-overlay{
+	width: 24px;
+	height: 24px;
+	margin-top: 11px;
+	margin-left: 11px;
+}
+.heading4{
+	margin-top: 5px;
+	font-weight: 300;
+	font-size: 16pt;
+}
+/*--- #gallery section ---*/
+.gallery-row, .gallery-card, .gallery-card-img{
+	border: none;
+	border-radius: 0;
+	margin: 0;
+	padding: 0;
+}
+.gallery-row{
+	margin: 45px 0;
+}
+.gallery-card{
+	margin: 40px auto;
+}
+.gallery-card-img{
+	width: 267px;
+	height: 225px;
+}
+.card-img-overlay{
+	position: absolute;
+	background-color: #69258f;
+	color: #fff;
+	margin: 0;
+	padding: 0;
+	opacity: 0.7;
+	width: 267px;
+	height: 57px;
+	top: unset;
+	right: 0;
+	bottom:0 !important;
+	left: 0;
+}
+.heading5{
+	font-size: 22pt;
+	margin: 8px 10px;
+}
+/*--- #contact section ---*/
+#contact{
+	position: relative;
+	margin-bottom: 130px;
+}
+.contact-bg{
+	background-color: #520254;
+	color: #fff;
+	margin: 60px 158px 50px 133px;
+	padding: 25px 20px;
+	width: 849px;
+	height: 556px;
+}
+.heading2{
+	position: absolute;
+	color: #fff;
+	top: 10px;
+	left: 150px;
+	font-size: 36pt;
+}
+.contact-container{
+	position: absolute;
+	background-color: #ebe8de;
+	border: none;
+	border-radius: 0;
+	width: 873px;
+	height: 519px;
+	top: 100px;
+	left: 195px;
+	padding: 0;
+}
+.contact-form-row{
+	border: none;
+	border-radius: 0;
+	margin: 0;
+	padding: 0;
+}
+.contact-map{
+	margin-right: auto;
+	padding: 0;
+	width: 337px;
+	height: 519px;
+}
+.iframe{
+	border: 0;
+	border-style: none;
+	width: 337px;
+	height: 519px;
+}
+.contact-form{
+	margin-left: auto;
+	padding: 0;
+	width: 536px;
+	height: 519px;
+}
+.contact-form-left{
+	margin-right: auto;
+	padding: 53px 26px;
+	width: 268px;
+}
+.contact-form-right{
+	padding: 53px 15px;
+	width: 268px;
+}
+input[type="text"], input[type="email"],textarea{
+	background-color: #fefdff;
+	color: #000;
+	border: none;
+	width: 194px;
+	height: 40px;
+	margin-bottom: 31px; 
+	padding-left: 15px;
+}
+textarea{
+	padding-top: 5px;
+	width: 194px;
+	height: 125px;
+}
+.list-inline, .list-inline-item{
+	margin: 0;
+	padding: 0;
+}
+.list-inline-item{
+	border: solid 1px #520254;
+	border-radius: 50%;
+	width: 39px;
+	height: 39px;
+	margin-left: 10px;
+	padding: 5px 5px;
+}
+.list-inline-item:nth-child(1){
+	padding: 6px 5px;
+}
+.list-inline-item:nth-child(2){
+	padding: 6px 11px;
+}
+.list-inline-item:nth-child(3){
+	padding: 7px 6px;
+}
+.list-inline-item a, 
+.list-inline-item a:hover, 
+.list-inline-item a:visited, 
+.list-inline-item a:active{
+	color: #520254;
+	text-decoration: none;
+}
+.list-inline-item a i{
+	font-size: 18pt;
+}
+.radio-row{
+	border: none;
+	border-radius: 0;
+	margin: 0;
+	padding: 0;
+}
+.radio-inline{
+	margin-top: 8px;
+	margin-right: 20px;
+	padding-bottom: 3px;
+	font-size: 15pt;
+}
+.spacer{
+	height: 105px;
+}
+p{
+	font-size: 15pt;
+	text-indent: 2px;
+}
+.checkboxes{
+	margin-top: 15px;
+	font-size: 15pt;
+}
+.check-label{
+	margin-left: 10px;
+	text-align: center
+}
+.form-button{
+	border: none;
+	background-color: #520254;
+	color: #fff;
+	width: 62px;
+	height: 40px;
+	margin-top: 40px;
+	margin-left: 120px;
+	font-size: 15pt;
+}
+/*--- footer area ---*/
+footer{
+	background-color: #520254;
+	color: #fff;
+	height: 82px;
+	font-size: 14pt;
+	font-weight: 300;
+}
+.footer-row{
+	margin: 0 113px;
+	padding-top: 30px;
+}
+.left-p{
+	margin-right: auto;
+}
+.right-p{
+	margin-left: auto;
+}
+.right-p a{
+	color: #dbdbdb;
+	text-decoration: none;
+}
+.right-p a:hover{
+	color: #f8f9fa;
+}
+
+/*--- tablet version ---*/
+@media only screen and (max-width: 991px) {
+	.main-container{
+		width: 100%;
+	}
+	/*--- navigation and logo margin ---*/
+	.nav-item{
+		margin: 0;
+		padding: 0;
+	}
+	.nav-link:hover:not(.active), .active{
+		border: none;
+	}
+	/*-- big background ---*/
+	.container1{
+		max-width: 991px;
+		height: 631px;
+	}
+	.chevron-down{
+		width: 60px;
+		font-size: 60px;
+	}
+	/*--- #about section ---*/
+	.about-card-img{
+		width: 476px;
+		height: 272px;
+	}
+	.card-icon-overlay{
+		width: 68px;
+		height: 68px;
+		top: -34px;
+	}
+	.icon-overlay{
+		width: 30px;
+		height: 30px;
+		margin-top: 15px;
+		margin-left: 15px;
+	}
+	/*--- #gallery section ---*/
+	.gallery-card-img{
+		width: 345px;
+		height: 290px;
+	}
+	.card-img-overlay{
+		position: unset;
+		width: 345px;
+	}
+	/*--- contact section ---*/
+	#contact{
+		margin-top: 40px;
+		margin-bottom: 30px;
+	}
+	.contact-bg{
+		display: none;
+	}
+	.heading2{
+		position: relative;
+		color: #000;
+		top: 0;
+		left: 0;
+		margin-top: 0;
+		margin-bottom: 30px;
+		text-align: center;
+	}
+	.contact-container{
+		position: relative;
+		width: 720px;
+		height: 650px;
+		top: 0;
+		left: 0;
+		margin-left: 22px;
+	}
+	.contact-map{
+		width: 720px;
+		height: 325px;
+		margin: 0;
+	}
+	.iframe{
+		width: 720px;
+		height: 325px;
+	}
+	.contact-form{
+		margin: 0;
+		padding-top: 20px;
+		width: 720px;
+		height: 325px;
+	}
+	.contact-form-left{
+		margin-right: auto;
+		padding: 0;
+		width: 360px;
+	}
+	.contact-form-right{
+		margin-left: auto;
+		padding: 0;
+		width: 360px;
+	}
+	input[type="text"], input[type="email"],textarea{
+		background-color: #f2f2f2;
+		width: 246px;
+		margin: 20 0 11px 60px;
+	}
+	.list-inline{
+		display: none;
+	}
+	textarea{
+		position: absolute;
+		right: 0;
+		bottom: 0;
+		margin-right: 60px;
+		margin-bottom: 110px;
+	}
+	.radio-row{
+		margin-top: 5px;
+		margin-left: 50px;
+	}
+	.spacer{
+		height: 10px;
+	}
+	.newsletter{
+		display: none;
+	}
+	.checkboxes{
+		display: none;
+	}
+	.form-button{
+		margin-top: 160px;
+		margin-left: 235px;
+	}
+}
+@media only screen and (max-width: 575px){
+	hr{
+		width: 100%;
+	}
+	/*--- navigation and header ---*/
+	.custom-nav{
+		margin: 0 10px;
+	}
+	.container1{
+		height: 399px;
+	}
+	.chevron-down{
+		display: none;
+	}
+
+	#main{
+		margin: 0;
+	}
+	/*--- #about section ---*/
+	.heading3{
+		font-size: 24pt;
+	}
+	.about-text{
+		margin: 5px 10px;
+		font-size: 18pt;
+	}
+	.about-card-img{
+		width: 479px;
+		height: 287px;
+	}
+	/*--- #gallery section ---*/
+	.gallery-row{
+		margin: 25px 0;
+	}
+	.gallery-card-img{
+		width: 478px;
+		height: 371px;
+	}
+	.card-img-overlay{
+		width: 478px;
+	}
+	/*--- #contact section ---*/
+	#contact{
+		margin-bottom: 70px;
+	}
+	.heading2{
+		font-size: 24px;
+	}
+	.contact-container{
+		width: 466px;
+		height: 540px;
+		margin: 5px auto;
+	}
+	.contact-map{
+		display: none;
+	}
+	.contact-form{
+		width: 466px;
+		height: 540px;
+	}
+	.contact-form-left, .contact-form-right{
+		margin: 0 40.5px;
+		width: 466px;
+	}
+	textarea{
+		position: unset;
+	}
+	input[type="text"], input[type="email"],textarea{
+		width: 385px;
+		margin: 10px auto;
+	}
+	.radio-row{
+		margin-top: 5px;
+		margin-left: 0;
+	}
+	.spacer{
+		display: none;
+	}
+	.form-button{
+		margin-top: 50px;
+		margin-left: 300px;
+	}
+	/*--- footer area ---*/
+	footer{
+		height: 149px;
+	}
+	.footer-row{
+		margin: 0 10px;
+	}
+}
