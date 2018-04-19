@@ -1,0 +1,231 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+<head>
+    <title>Photography</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" href="Mainlogo.ico" />
+    <link rel="stylesheet" type="text/css" media="screen" href="lib/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto"> 
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+</head>
+
+<body>
+    <div id="main-container">
+        <!-- webpage header and main navigation -->
+        <header>
+            <!-- navigation -->
+            <nav class="navbar navbar-expand-lg custom-nav navbar-light">
+                <a class="navbar-brand" href="#">
+                    <img class="img-fluid logo" src="images/Mainlogo.png" />
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar01" aria-controls="navbar01" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon navbar-toggler-open-icon"></span>
+                </button>
+                
+                <div class="collapse navbar-collapse" id="navbar01">
+                    <ul class="navbar-nav ml-auto mt-2 mt-lg-0" id="menu">
+                        <li class="nav-item">
+                        <a class="nav-link active" href="#home">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="#about">ABOUT</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="#gallery">GALLERY</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">CONTACT</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <!-- main text, chevron-down icon and big fat background -->
+            <div class="container1">
+                <h1 class="heading1">MAIN TEXT BODY</h1>
+                
+                <div class="chevron-down bounce">
+                    <a href="#about">
+                        <i class="fas fa-chevron-circle-down"></i>
+                    </a>
+                </div>
+            </div>
+        </header>
+        
+        <!-- webpage main sections -->
+        <main id="main">
+            <!-- #about section -->
+            <section id="about">
+                <article>
+                    <h3 class="heading3">ABOUT PHOTOGRAPHY</h3>
+                    <p class="about-text">
+                        Photography is the science, art, 
+                        application and practice of creating 
+                        durable images by recording light or other 
+                        electromagnetic radiation, either electronically 
+                        by means of an image sensor, or chemically by 
+                        means of a light-sensitive material such 
+                        as photographic film.
+                    </p>
+                </article>
+                <!-- #about section photos -->
+                <div class="row about-row">
+                    <div class="card about-card"><!-- card #1 -->
+                        <img class="card-img about-card-img" src="images/Mini1.jpg" alt="Mini1">
+                        <div class="card-icon-overlay">
+                            <img class="img-fluid icon-overlay" src="images/camera.svg" alt="camera"/>
+                        </div>
+                        <h4 class="heading4">LOREM IPSUM</h4>
+                    </div>
+                    <div class="card about-card"><!-- card #2 -->
+                        <img class="card-img about-card-img" src="images/Mini2.jpg" alt="Mini2">
+                        <div class="card-icon-overlay">
+                            <img class="img-fluid icon-overlay" src="images/dot-in-a-circle.svg" alt="camera"/>
+                        </div>
+                        <h4 class="heading4">LOREM IPSUM</h4>
+                    </div>
+                    <div class="card about-card"><!-- card #3 -->
+                        <img class="card-img about-card-img" src="images/Mini3.jpg" alt="Mini3">
+                        <div class="card-icon-overlay">
+                            <img class="img-fluid icon-overlay" src="images/picture.svg" alt="picture"/>
+                        </div>
+                        <h4 class="heading4">LOREM IPSUM</h4>
+                    </div>
+                </div>
+            </section>
+            <hr />
+            <!-- #gallery section -->
+            <section id="gallery">
+                <h3 class="heading3">GALLERY</h3>
+                <!-- #gallery photos-->
+                <div class="row gallery-row">
+                    <div class="card gallery-card"><!-- #gallery card #1 -->
+                        <img class="card-img gallery-card-img" src="images/gallery1.jpg" alt="gallery1">
+                        <div class="card-img-overlay">
+                            <h5 class="heading5">WildLife</h4>
+                        </div>
+                    </div>
+                    <div class="card gallery-card"><!-- #gallery card #2 -->
+                        <img class="card-img gallery-card-img" src="images/gallery2.png" alt="gallery2">
+                        <div class="card-img-overlay">
+                            <h5 class="heading5">Portret</h4>
+                        </div>
+                    </div>
+                    <div class="card gallery-card"><!-- #gallery card #3 -->
+                        <img class="card-img gallery-card-img" src="images/gallery3.jpg" alt="gallery3">
+                        <div class="card-img-overlay">
+                            <h5 class="heading5">Animals</h4>
+                        </div>
+                    </div>
+                    <div class="card gallery-card"><!-- #gallery card #4 -->
+                        <img class="card-img gallery-card-img" src="images/gallery4.jpg" alt="gallery4">
+                        <div class="card-img-overlay">
+                            <h5 class="heading5">Black&White</h4>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <hr />
+            <!-- #contact section -->
+            <section id="contact">
+                <h2 class="heading2">CONTACT</h2>
+                <div class="container contact-bg"><!-- #contact bg container-->
+                </div>
+
+                <div class="container contact-container"><!-- #contact form container -->
+                    <div class="row contact-form-row">
+                        <div class="contact-map"><!-- google map iframe -->
+                            <iframe class="iframe"
+                                allowfullscreen 
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1770.8348429108405!2d44.78526304233096!3d41.716691895557126!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x404472d4fa5b02d7%3A0xced15c2c7992ceb5!2sGeoLab!5e0!3m2!1ska!2sge!4v1523919755733">
+                            </iframe>   
+                        </div>
+                        <div class="row contact-form"><!-- contact form fields -->
+                            <div class="contact-form-left"><!-- left form -->
+                                <input type="text" placeholder="name" />
+                                <br />
+                                <input type="email" placeholder="e-mail" />
+                                <br />
+                                <input type="text" placeholder="subject" />
+                                <br />
+                                <textarea rows="10" cols="15" placeholder="text..."></textarea>
+
+                                <!-- social media links -->
+                                <ul class="list-inline">
+                                    <li class="list-inline-item">
+                                        <a href="#google plus">
+                                            <i class="fab fa-google-plus-g"></i>
+                                        </a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <a href="#facebook">
+                                            <i class="fab fa-facebook-f"></i>
+                                        </a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <a href="#Twitter">
+                                            <i class="fab fa-twitter"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="contact-form-right"><!-- right form -->
+                                <div class="row radio-row"><!-- radio buttons-->
+                                    <div class="radio-inline">
+                                        <input class="radio-button-inline" type="radio" name="coolradio" id="radio01" checked/>
+                                        <label class="radio-label-inline" for="radio01">male</label>
+                                    </div>
+                                    <div class="radio-inline">
+                                        <input class="radio-button-inline" type="radio" name="coolradio" id="radio02"/>
+                                        <label class="radio-label-inline" for="radio02">female</label>
+                                    </div>
+                                </div>
+                                <div class="spacer"></div>
+                                <p class="newsletter">Sign up for newsletter</p>
+
+                                <div class="checkboxes"><!-- form checkboxes-->
+                                    <input class="check-button" type="checkbox" id="check01"/>
+                                    <label class="check-label" for="check01">receive images</label>
+                                </div>
+                                <div class="checkboxes">
+                                    <input class="check-button" type="checkbox" id="check02"/>
+                                    <label class="check-label" for="check02">receive promotions</label>
+                                </div>
+                                <div class="checkboxes">
+                                    <input class="check-button" type="checkbox" id="check03"/>
+                                    <label class="check-label" for="check03">receive updates</label>
+                                </div>
+                                <div class="checkboxes">
+                                    <input class="check-button" type="checkbox" id="check04"/>
+                                    <label class="check-label" for="check04">receive new cameras</label>
+                                </div>
+
+                                <button class="form-button" type="submit">send</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- webpage footer area-->
+        <footer>
+            <div class="row footer-row">
+                <p class="left-p"> &copy; copyrigth 2018</p>
+                <p class="right-p">
+                    created by: 
+                    <a href="http://levanijincharadze.me" target="_blank">levan jincharadze</a>
+                </p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="lib/jQuery/jquery-3.3.1.min.js"></script>
+    <script src="lib/popper.js/dist/umd/popper.min.js"></script>
+    <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
